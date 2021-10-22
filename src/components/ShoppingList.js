@@ -15,8 +15,10 @@ class ShoppingList extends Component {
             <div className="row">
               <ProductConsumer>
                 {(value) => {
-                   console.log(value)
-                  return value.products.map(product=>{
+                  
+                const products =  value.products
+                // console.log(products)
+                  return products.map(product=>{
                     return <Product key ={product._id} product = {product}/>
                   })
                 }}
