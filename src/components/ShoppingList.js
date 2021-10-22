@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Title from './Title';
 import Product from './Product';
 import { ProductConsumer } from '../context';
 import "./product.scss"

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-export default function(){
+export default function CartColumns (){
     return (
         <CartcolumnWrapper className="container-fluid text-center d-none d-lg-block">
             <div className="row align-items-center">
