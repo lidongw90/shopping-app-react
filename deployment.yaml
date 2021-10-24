@@ -1,0 +1,21 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: eccomerceapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eccomerceapp
+  template:
+    metadata:
+      labels:
+        app: eccomerceapp
+    spec:
+      containers:
+        - name: eccomerceapp
+          image: localhost:5000/eccomerceapp
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+      restartPolicy: Always
