@@ -78,19 +78,14 @@ jobs:
           image: ${{ secrets.REACTUSERNAME }}/shopping-app-react:latest
           run: |
             echo "runing the docker image"
-  push_to_Netlify:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-    # build docker image and push to docker hub
-    # only if the app build and test successfully
-    needs: [build_test]
 
+  push_to_vercel:
+    runs-on: ubuntu-latest
     steps:
-      - name: Deploy to netlify
-        uses: netlify/actions/cli@master
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.DEV_NETLIFY_SITE_ID }}
+      - uses: actions/checkout@v2
+      - uses: amondnet/vercel-action@v20
         with:
-          args: deploy --dir=build --prod
-          secrets: '["DEV_NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
+          vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
+          vercel-org-id: ${{ secrets.ORG_ID}} #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID}} #Required
+          working-directory: ./sub-directory
