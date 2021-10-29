@@ -27,10 +27,10 @@ export default class Navbar extends Component {
       <nav className="nav">
         <ul className="categories">
           <li>
-            Dresses /gowns
+            Dresses 
           </li>
           <li>
-            Shoes/sandals
+            Shoes
           </li>
           <li>
            Bags
