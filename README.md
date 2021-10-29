@@ -3,9 +3,7 @@
 Build your app to docker image, publish and deploy on DockerHub and Vercel with gitHub actions.
 
 This repository is for the
-[CI/CD Pipeline with React App using GitHub Actions](https://sandygoody.medium.com/ci-cd-pipeline-with-react-app-using-github-actions-1b219d4e162f)
-
-tutorial.
+[CI/CD Pipeline with React App using GitHub Actions](https://sandygoody.medium.com/ci-cd-pipeline-with-react-app-using-github-actions-1b219d4e162f) tutorial.
 
 The repository contains a CI/CD Pipeline workflow which builds your app to docker image, publish and deploy on DockerHub and Vercel with github actions.
 
