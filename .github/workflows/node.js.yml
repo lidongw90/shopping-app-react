@@ -84,11 +84,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: amondnet/vercel-action@v20
-
+      
       - name: "Deploy to Vercel"
-        run: prodRun=""
+        run:
+          prodRun=""
           if [[ ${GITHUB_REF} == "refs/heads/main" ]]; then
-          prodRun="--prod"
+            prodRun="--prod"
           fi
 
           npx vercel --token ${VERCEL_TOKEN} $prodRun
