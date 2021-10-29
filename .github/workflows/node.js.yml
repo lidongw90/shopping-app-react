@@ -91,7 +91,7 @@ jobs:
           prodRun="--prod"
           fi
 
-          npx vercel --token ${VERCEL_TOKEN} $prodRun
+          npx vercel --token ${secrets.VERCEL_TOKEN} $prodRun
         env:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
           vercel-org-id: ${{ secrets.ORG_ID}} #Required
