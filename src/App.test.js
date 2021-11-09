@@ -13,6 +13,6 @@ test('renders learn react link', () => {
             <App />
         </Router>
     </ProductProvider>);
-  const linkElement = getByText(/Closet/i);
+  const linkElement = getByText("Cart");
   expect(linkElement).toBeInTheDocument();
 });
