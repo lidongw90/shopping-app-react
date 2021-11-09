@@ -1,16 +1,20 @@
 .header{
     // // 
-    // position:fixed;
-    // // z-index:1;
+    position:fixed;
+    z-index:1;
+    width:100%;
 }.nav{
+  // overflow: scroll;
     // position:fixed;
     // z-index:1;
+    width:100%;
    
     .categories{
         width:100%;
-        
+        overflow: auto;
         background-color: #ed017f;
 display:flex;
+
 // justify-content: space-around;
 align-items: center;
 li{

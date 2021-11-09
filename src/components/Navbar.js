@@ -11,7 +11,7 @@ export default class Navbar extends Component {
       <NavWrapper className="navbar navbar-expand-expand-sm navbar-dark px-sm-5">
        
         
-        <Link to="/" className="nav-link">Closet
+        <Link to="/" className="nav-link">
         <img src={logo} alt="store" style={{width:"50px", fill:"white", height:"50px"}} /></Link>
    
         <Link to="/cart" className="ml-auto">
@@ -39,7 +39,7 @@ export default class Navbar extends Component {
             Jewelleries
           </li>
           <li>
-            Hair and Wig 
+            Hair/Wig 
           </li>
           <li>
             Lingerie

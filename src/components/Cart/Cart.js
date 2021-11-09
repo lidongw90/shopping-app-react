@@ -5,10 +5,11 @@ import { ProductConsumer } from '../../context';
 import EmptyCart from "./EmptyCart"
 import CartTotals from "./CartTotals"
 import CartList from "./CartList"
+import "./cart.scss"
 export default class Cart extends Component {
     render() {
         return (
-            <section>
+            <section className="cart">
                 <ProductConsumer>
                     {value =>{
                         const {cart} =value;

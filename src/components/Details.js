@@ -20,22 +20,10 @@ export default class Details extends Component {
                     title,
                     inCart
                 } = value.detailProducts
-                // const id = value.detailProducts._id;
-                // const company = value.detailProducts.company
-                // const  img = value.detailProducts.img
-                // const description = value.detailProducts.description;
-                // const  price = value.detailProducts.price;
-                // const title = value.detailProducts.title;
-                // const   inCart= value.detailProducts.inCart;
+                
                 return (
                     <ProductWrapper >
-                        {/* title */}
-                        {/* <div className="row">
-                            <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
-                                <h1>{title}</h1>
-                            </div>
-                        </div> */}
-                        {/* product info */}
+                        
                         <div className="row">
                             <div className="col-10 mx-auto col-md-6 my-3">
                                 <img src={img} className="img-fluid" alt="product" />
@@ -90,14 +78,11 @@ export default class Details extends Component {
 }
 
 const ProductWrapper = styled.div `
+padding-top:20em;
 .row{
-    width:80%;
-    position: absolute;
-left: 50%;
-top: 60%;
-transform: translate(-50%, -50%);
-
-padding: 10px;
+    width:90%;
+    margin:auto;
+    
 .text-muted{
     font-size:16px;
     line-height:2
