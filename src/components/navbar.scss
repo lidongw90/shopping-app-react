@@ -1,24 +1,28 @@
+@import "../assest/mixins.scss";
+
 .header{
     // // 
     position:fixed;
     z-index:1;
     width:100%;
 }.nav{
-  // overflow: scroll;
-    // position:fixed;
-    // z-index:1;
+
+  @media only screen and (max-width: 1024px) {
+display:none;
+ 
+  }
     width:100%;
    
     .categories{
         width:100%;
-        overflow: auto;
+        // overflow: auto;
         background-color: #ed017f;
 display:flex;
 
 // justify-content: space-around;
 align-items: center;
 li{
-    padding: 1rem 6rem;
+    padding: 1rem 5.5rem;
     color:white;
     font-size: 14px;
   &:hover {
@@ -29,3 +33,69 @@ li{
     }
 
 }
+
+
+// sidebar
+.sidenav{
+  display:none;
+  @media only screen and (max-width: 1024px) {
+    display:block;
+     
+      }
+  div{
+    background-color: white;
+  }
+
+span{
+  font-size: 15px; 
+  color:black;
+  i{
+    font-size: 25px; 
+  color:#ed017f;
+  padding:0.5em;
+  }
+ 
+}
+
+ul{
+  background-color: #ed017f;
+color:white;
+// display: flex;
+// flex-direction: column;
+// justify-content: space-between;
+width:150px;
+font-size: 20px;
+// width: 10%;
+    // padding: 1.5rem;
+    position: fixed;
+    top: 130px;
+    left: 0;
+    height: 100%;
+    // transition: var(--mainTransition);
+    // background-color: rgb(241, 233, 212);
+    z-index: 3;
+    // overflow: scroll;
+    span i{
+      position: absolute;
+      right: 0;
+      color: white;
+    }
+  li{
+    padding: 1em 1em;
+    font-size: 14px;
+    margin: 1em 0;
+
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      color:black
+    }
+  }
+//   li{
+//     padding: 1rem 6rem;
+//     color:white;
+//     font-size: 14px;
+  
+// }
+}
+}
+
