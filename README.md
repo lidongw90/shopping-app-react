@@ -10,6 +10,7 @@ The repository contains a CI/CD Pipeline workflow which builds your app to docke
 
 # Configuration
 
+
 1. Create React App.
 
 2. Add `Dockerfile` and `.dockerignore` file to the root of the App.
